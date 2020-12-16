@@ -145,7 +145,7 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 100%;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -292,7 +292,7 @@ img {
   padding-top: 30px;
   margin-bottom: 16px;
 }
-.social-list + .social-list {
+.social-list:not(:last-child) {
   margin-right: 10px;
 }
 .workers-name {
@@ -314,7 +314,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   fill: rgba(175, 177, 184, 1);
 }
-
 .list-links:hover,
 .list-links:focus {
   background: var(--color-accent);
@@ -476,7 +475,8 @@ img {
   margin-bottom: 30px;
   width: 370px;
 }
-.port-image:hover {
+.port-cards:hover,
+.port-cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
