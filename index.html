@@ -49,13 +49,24 @@
     <section class="hero">
       <div class="container">
       <h1 class="description">Эффективные решения для вашего бизнеса</h1>
-      <button class="hero-button" type="button">Заказать услугу</button>
+      <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
       </div>
-    </section>
+        </section>
+    <div class="backdrop is-hidden transition" data-modal>
+      <div class="modal transition">
+        <button data-modal-cloced class="button-close" type="button">
+          <svg class="crest" width="11px" height="11px">
+            <use href="./images/sprite2.svg#icon-closed"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+   
     <!-- End Hero -->
 
     <!-- h2 -->
     <section class="section">
+      <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
       <ul class="advantages list">
         <li class="subject">
@@ -105,18 +116,12 @@
       <div class="container">
         <h2 class="picture">Чем мы занимаемся</h2>
       <ul class="picture-item list">
-        <div class="thumb">
-        <li><img src="./images/image1.jpg" alt="typing hands" width="370" height="294">
+        <li class="picture-list"><img src="./images/image1.jpg" alt="typing hands" width="370" height="294">
           <p class="text-list">Десктопные приложения</p></li>
-        </div>
-          <div class="thumb">
-        <li><img src="./images/image2.jpg" alt="laptop" width="370" height="294">
+        <li class="picture-list"><img src="./images/image2.jpg" alt="laptop" width="370" height="294">
           <p class="text-list">Мобильные приложения</p></li>
-        </div>
-          <div class="thumb">
-        <li><img src="./images/image3.jpg" alt="tablet" width="370" height="294">
+        <li class="picture-list"><img src="./images/image3.jpg" alt="tablet" width="370" height="294">
           <p class="text-list">Дизайнерские решения</p></li>
-        </div>
       </ul>
       </div>
     </section>
@@ -134,23 +139,23 @@
           <h3 class="workers-name">Игорь Демьяненко</h3>
         <p class="position" lang="en">Product Designer</p>
         <ul class="workers-social list">
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram-2"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icon transitions" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin-1"></use>
               </svg>
             </a></li>
@@ -162,23 +167,23 @@
           <h3 class="workers-name">Ольга Репина</h3>
           <p class="position" lang="en">Frontend Developer</p>
            <ul class="workers-social list">
-            <li class="social-list"><a class="list-links" href="#">
-                <svg class="social-icons" width="20" height="20">
+            <li class="social-list"><a class="list-links transition" href="#">
+                <svg class="social-icons transition" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram-2"></use>
                 </svg>
               </a></li>
-            <li class="social-list"><a class="list-links" href="#">
-                <svg class="social-icons" width="20" height="20">
+            <li class="social-list"><a class="list-links transition" href="#">
+                <svg class="social-icons transition" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter-1"></use>
                 </svg>
               </a></li>
-            <li class="social-list"><a class="list-links" href="#">
-                <svg class="social-icons" width="20" height="20">
+            <li class="social-list"><a class="list-links transition" href="#">
+                <svg class="social-icons transition" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook-1"></use>
                 </svg>
               </a></li>
-            <li class="social-list"><a class="list-links" href="#">
-                <svg class="social-icons" width="20" height="20">
+            <li class="social-list"><a class="list-links transition" href="#">
+                <svg class="social-icons transition" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin-1"></use>
                 </svg>
               </a></li>
@@ -190,23 +195,23 @@
           <h3 class="workers-name">Николай Тарасов</h3>
         <p class="position" lang="en">Marketing</p>
         <ul class="workers-social list">
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram-2"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin-1"></use>
               </svg>
             </a></li>
@@ -219,23 +224,23 @@
           <h3 class="workers-name">Михаил Ермаков</h3>
         <p class="position" lang="en">UI Designer</p>
         <ul class="workers-social list">
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-instagram-2"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-twitter-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-facebook-1"></use>
               </svg>
             </a></li>
-          <li class="social-list"><a class="list-links" href="#">
-              <svg class="social-icons" width="20" height="20">
+          <li class="social-list"><a class="list-links transition" href="#">
+              <svg class="social-icons transition" width="20" height="20">
                 <use href="./images/sprite.svg#icon-linkedin-1"></use>
               </svg>
             </a></li>
@@ -249,7 +254,7 @@
       <div class="container clients">
         <h2 class="text">Постоянные клиенты</h2>
       <ul class="companies list">
-        <li class="border"><a class="clients-list" href="/">
+        <li class="border"><a class="clients-list transition" href="/">
           <svg class="border-pic" width="44" height="49">
             <use href="./images/sprite.svg#icon-logo-1"></use>
           </svg></a>
@@ -322,6 +327,6 @@
         </div>
     </div>
    </footer>
-  <!-- End footer -->
-</body>
+  <script src="./js/modal.js"></script>
+  </body>
 </html>
