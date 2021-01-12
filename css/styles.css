@@ -30,9 +30,6 @@ address {
 img {
   display: block;
 }
-.transition {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 /*logo header+footer*/
 .logo-web,
 .logo-studio {
@@ -110,10 +107,14 @@ img {
   fill: var(--color-accent);
 }
 .item {
+  position: relative;
   display: block;
   padding-top: 33px;
   padding-bottom: 31px;
-  position: relative;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current:after {
   content: "";
@@ -145,7 +146,10 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
   opacity: 1;
+
   transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -153,6 +157,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   min-width: 528px;
   min-height: 581px;
@@ -385,8 +391,11 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: rgba(175, 177, 184, 1);
-  transition-property: background-color;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .list-links:hover,
 .list-links:focus {
   background: var(--color-accent);
@@ -434,6 +443,10 @@ img {
   width: 170px;
   height: 90px;
   fill: rgba(175, 177, 184, 1);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list:hover,
 .clients-list:focus {
@@ -514,6 +527,10 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: rgba(255, 255, 255, 1);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-item:hover,
 .join-item:focus {
@@ -577,8 +594,10 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -608,6 +627,11 @@ img {
 .port-cards:focus .overlay {
   transform: translateY(0);
 }
+.port-cards {
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .section-portfolio h2 {
   font-weight: 700;
   font-size: 18px;
@@ -628,21 +652,23 @@ img {
   height: 294px;
   overflow: hidden;
 }
-.overlay .overlay-text {
-  padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   transition-property: transform;
 }
